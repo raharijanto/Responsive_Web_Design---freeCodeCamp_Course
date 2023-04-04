@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form Score</h1>
+    <p id="description">Thank you for the time to score my Survey Form Project</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Your Name 
+                <input type="text" name="name" id="name" required placeholder="Enter your name here">
+            </label>
+            <label for="email" id="email-label"> Your Email 
+                <input type="email" name="email" id="email" required placeholder="Enter your email here">
+            </label>
+            <label for="number" id="number-label"> Your Age 
+                <input type="number" name="number" id="number" min="15" max="120" placeholder="Enter your age here (optional)">
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Does it meet the requirements?</p>
+            <label for="requirement-yes">
+                <input type="radio" name="requirement" id="requirement-yes" class="inline" value="Yes"> Yes
+            </label>
+            <label for="requirement-no">
+                <input type="radio" name="requirement" id="requirement-no" class="inline" value="No"> No
+            </label>
+            <label for="dropdown">What do you think is the score for this project?
+                <select name="test-score" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </label>
+            <p>What do you think could be improved further?</p>
+            <label for="improve-bgcolor">
+                <input type="checkbox" name="improve-bgcolor" id="improve-bgcolor" class="inline" value="bgcolor"> Background Color
+            </label>
+            <label for="improve-bgimg">
+                <input type="checkbox" name="improve-bgimg" id="improve-bgimg" class="inline" value="bgimg"> Background Image
+            </label>
+            <label for="improve-font">
+                <input type="checkbox" name="improve-font" id="improve-font" class="inline" value="font"> Font
+            </label>
+            <label for="improve-fontcolor">
+                <input type="checkbox" name="improve-fontcolor" id="improve-fontcolor" class="inline" value="fontcolor"> Font Color
+            </label>
+            <label for="improve-formtemplate">
+                <input type="checkbox" name="improve-formtemplate" id="improve-formtemplate" class="inline" value="formtemplate"> Form Template
+            </label>
+            <label for="improve-others">
+                <input type="checkbox" name="improve-others" id="improve-others" class="inline" value="others"> Others
+            </label>
+            <label for="critics-suggest">Do you have any criticism or suggestion for this project?
+                <textarea name="critics-suggest" id="critics-suggest" cols="30" rows="3" placeholder="Put any of your criticism or suggestion here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
